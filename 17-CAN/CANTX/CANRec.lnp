@@ -1,4 +1,0 @@
---device DARMP1 "startup_lpc17xx.o" "system_lpc17xx.o" "can1213.o" --strict --scatter "CANRec.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\CANRec.map" -o "CANRec.axf"

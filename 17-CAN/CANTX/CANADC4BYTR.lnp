@@ -1,4 +1,0 @@
---device DARMP1 "startup_lpc17xx.o" "system_lpc17xx.o" "can_adc_yash.o" --strict --scatter "CANADC4BYTR.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\CANADC4BYTR.map" -o "CANADC4BYTR.axf"
