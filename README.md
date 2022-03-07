@@ -4,25 +4,25 @@ LPC1768 is arm cortex-m3 micro controller with on chip 512kb flash and 32kb RAM 
 
 In this repository bare metal coding was done to test differnt peripherals like:
 
-#### GPIO
-#### PWM
-#### ADC
-#### DAC
-#### Interrupt 
-#### SPI
-#### I2C
-#### CAN
-#### UART
-#### TIMER
+##### GPIO
+##### PWM
+##### ADC
+##### DAC
+##### Interrupt 
+##### SPI
+##### I2C
+##### CAN
+##### UART
+##### TIMER
 
 Also few external peripherals like :
 
-#### LCD
-#### KEYPAD
-#### GPS
-#### GSM
-#### RFID
-#### Temperature sensor
+##### LCD
+##### KEYPAD
+##### GPS
+##### GSM
+##### RFID
+##### Temperature sensor
 
-Note : To understand the code schematic shall be refered.
+Note : To understand the code attached schematic and data sheet shall be referred.
 
