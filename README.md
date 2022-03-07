@@ -24,5 +24,5 @@ Also few external peripherals like :
 #### RFID
 #### Temperature sensor
 
-
+Note : To understand the code schematic shall be refered.
 
