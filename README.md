@@ -17,11 +17,11 @@ In this repository bare metal coding was done to test differnt peripherals like:
 
 Also few external peripherals like :
 
-**LCD**
-## KEYPAD
+### LCD
+### KEYPAD
 ### GPS
-## GSM
-#### RFID
+### GSM
+### RFID
 ### Temperature sensor
 
 
