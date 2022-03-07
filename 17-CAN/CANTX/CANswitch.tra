@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'CANswitch.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_lpc17xx.o"'
+### List of Objects: adding '"system_lpc17xx.o"'
+### List of Objects: adding '"can1213.o"'
+### ADS-LD Command completed:
+--device DARMP1 "startup_lpc17xx.o" "system_lpc17xx.o" "can1213.o" --strict --scatter "CANswitch.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\CANswitch.map" -o "CANswitch.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'CANswitch.axf'
+### ADS-LD Command File: 'CANswitch.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'CANswitch.lnp', Handle=0x000005CC
+### Writing '.lnp' file
+### ADS-LD Command file 'CANswitch.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

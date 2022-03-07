@@ -1,0 +1,5 @@
+switch_1_led.o: switch_1_led.c
+switch_1_led.o: C:\Keil\ARM\INC\NXP\LPC17xx\LPC17XX.H
+switch_1_led.o: C:\Keil\ARM\RV31\INC\core_cm3.h
+switch_1_led.o: C:\Keil\ARM\RV31\INC\stdint.h
+switch_1_led.o: C:\Keil\ARM\INC\NXP\LPC17xx\system_LPC17xx.h

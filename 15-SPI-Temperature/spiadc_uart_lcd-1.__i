@@ -1,0 +1,1 @@
+-c --device DARMP1 -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\NXP\LPC17xx" -o "spiadc_uart_lcd-1.o" --omf_browse "spiadc_uart_lcd-1.crf" --depend "spiadc_uart_lcd-1.d" "..\spi_sir_code\spiadc_uart_lcd-1.c"

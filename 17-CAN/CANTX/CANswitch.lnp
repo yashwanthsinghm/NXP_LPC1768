@@ -1,0 +1,4 @@
+--device DARMP1 "startup_lpc17xx.o" "system_lpc17xx.o" "can1213.o" --strict --scatter "CANswitch.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\CANswitch.map" -o "CANswitch.axf"

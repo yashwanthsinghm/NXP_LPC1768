@@ -1,0 +1,21 @@
+#include<LPC17XX.H>
+int main()
+{ unsigned int a,b,c,d,carry_sum;
+SystemInit();
+LPC_SC->PCONP=0X00008000;
+LPC_GPIO0->FIOMASK3=0X87;
+LPC_GPIO0->FIODIR3=0X78;//SIMULATION
+//LPC_GPIO0->FIODIR3=0X87;//ON BOARD
+LPC_GPIO0->FIOMASK1=0XF0;
+LPC_GPIO0->FIODIR1=0X0F;
+while(1){
+a=(LPC_GPIO0->FIOPIN3&0X40)>>6;
+b=(LPC_GPIO0->FIOPIN3&0X20)>>5;
+c=(LPC_GPIO0->FIOPIN3&0X10)>>4;
+d=(LPC_GPIO0->FIOPIN3&0X08)>>3;
+carry_sum=a+b+c+d;
+if(carry_sum!=0x00)
+LPC_GPIO0->FIOPIN1=carry_sum;
+else
+LPC_GPIO0->FIOCLR1=carry_sum;
+} }

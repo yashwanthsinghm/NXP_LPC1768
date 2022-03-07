@@ -1,0 +1,71 @@
+#include<lpc17xx.h>
+void speed(unsigned long int x);
+void speed1(unsigned long int x1);
+int main()
+{
+	//unsigned char val1;
+	SystemInit();
+	LPC_SC->PCONP=0X00008000;
+	LPC_GPIO0->FIOMASK3=0XBF;
+		LPC_GPIO0->FIOMASK3=0X8F;
+	LPC_GPIO0->FIODIR3=0X00;
+	LPC_GPIO1->FIOMASK0=0XEC;
+	LPC_GPIO1->FIODIR0=0X13;
+	//val1=LPC_GPIO0->FIOPIN3;
+	while(1){
+		if((LPC_GPIO0->FIOPIN3)==0X40)
+	{
+		if(((((LPC_GPIO0->FIOPIN3)&0X10)>>4)==1)&&((((LPC_GPIO0->FIOPIN3)&0X20)>>5)==1))
+	      speed(0xFFFF);
+		else if(((((LPC_GPIO0->FIOPIN3)&0X10)>>4)==1)&&((((LPC_GPIO0->FIOPIN3)&0X20)>>5)!=1))
+		     speed(0x7FFF);
+		else if(((((LPC_GPIO0->FIOPIN3)&0X10)>>4)!=1)&&((((LPC_GPIO0->FIOPIN3)&0X20)>>5)==1))
+		     speed(0x3FFF);
+		else
+		     speed(0x0FFF);
+	}
+		else
+		{
+				if(((((LPC_GPIO0->FIOPIN3)&0X10)>>4)==1)&&((((LPC_GPIO0->FIOPIN3)&0X20)>>5)==1))
+	      speed1(0xFFFF);
+		else if(((((LPC_GPIO0->FIOPIN3)&0X10)>>4)==1)&&((((LPC_GPIO0->FIOPIN3)&0X20)>>5)!=1))
+		     speed1(0x7FFF);
+		else if(((((LPC_GPIO0->FIOPIN3)&0X10)>>4)!=1)&&((((LPC_GPIO0->FIOPIN3)&0X20)>>5)==1))
+		     speed1(0x3FFF);
+		else
+		     speed1(0x0FFF);
+		}
+
+	}
+
+}
+void speed(unsigned long int x)
+{
+	unsigned long int val;
+	for (val=0;val<x;val++)
+	{
+
+
+		LPC_GPIO1->FIOSET0=0X12;
+	}
+	for (val=0;val<((0XFFFF)-x);val++)
+	{
+
+		LPC_GPIO1->FIOCLR0=0X010;
+	}
+}
+void speed1(unsigned long int x1)
+{
+	unsigned long int val1;
+	for (val1=0;val1<x1;val1++)
+	{
+
+
+		LPC_GPIO1->FIOSET0=0X03;
+	}
+	for (val1=0;val1<((0XFFFF)-x1);val1++)
+	{
+
+		LPC_GPIO1->FIOCLR0=0X03;
+	}
+}

@@ -1,0 +1,1 @@
+-c --device DARMP1 -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\NXP\LPC17xx" -o "74hc595.o" --omf_browse "74hc595.crf" --depend "74hc595.d" "D:\LPC1768 CD\Sample Programes\74HC595.c"

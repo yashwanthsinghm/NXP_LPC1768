@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'CAN_tx1.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_lpc17xx.o"'
+### List of Objects: adding '"system_lpc17xx.o"'
+### List of Objects: adding '"can_tx1.o"'
+### ADS-LD Command completed:
+--device DARMP1 "startup_lpc17xx.o" "system_lpc17xx.o" "can_tx1.o" --strict --scatter "CAN_tx1.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\CAN_tx1.map" -o "CAN_tx1.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'CAN_tx1.axf'
+### ADS-LD Command File: 'CAN_tx1.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'CAN_tx1.lnp', Handle=0x0000026C
+### Writing '.lnp' file
+### ADS-LD Command file 'CAN_tx1.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
