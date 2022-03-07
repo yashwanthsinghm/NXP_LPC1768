@@ -1,1 +1,0 @@
--c --device DARMP1 -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\NXP\LPC17xx" -o "spi_temperature.o" --omf_browse "spi_temperature.crf" --depend "spi_temperature.d" "D:\arm\spi\spi_temperature.c"
