@@ -26,3 +26,6 @@ Also few external peripherals like :
 
 Note : To understand the code attached schematic and data sheet shall be referred.
 
+## License & copyright
+ Yashwanth singh M ,Engineer
+Licensed under the [MIT License](LICENSE).
